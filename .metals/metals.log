@@ -4020,3 +4020,401 @@ Oct 03, 2024 9:15:31 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notif
 INFO: Unsupported notification method: $/setTrace
 Oct 03, 2024 9:15:31 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2024.10.03 22:14:39 INFO  Deduplicating compilation of Practica_POO_25 from bsp client 'Metals 1.3.5' (since 59m 40.418s)
+2024.10.03 22:14:39 INFO  compiling practica_poo_25 (6 java sources)
+2024.10.03 22:14:39 INFO  compiling practica_poo_25 (6 java sources)
+2024.10.03 22:14:39 WARN  javac exited with exit code 1
+2024.10.03 22:14:39 WARN  javac exited with exit code 1
+2024.10.03 22:14:40 INFO  time: compiled Practica_POO_25 in 0.95s
+2024.10.03 22:14:40 INFO  compiling practica_poo_25 (6 java sources)
+2024.10.03 22:14:40 WARN  javac exited with exit code 1
+2024.10.03 22:14:40 INFO  time: compiled Practica_POO_25 in 0.3s
+2024.10.03 22:14:40 INFO  compiling practica_poo_25 (6 java sources)
+2024.10.03 22:14:40 WARN  javac exited with exit code 1
+2024.10.03 22:14:40 INFO  time: compiled Practica_POO_25 in 0.33s
+2024.10.03 22:21:10 INFO  compiling practica_poo_25 (6 java sources)
+2024.10.03 22:21:10 WARN  javac exited with exit code 1
+2024.10.03 22:21:10 INFO  time: compiled Practica_POO_25 in 0.29s
+2024.10.03 22:29:22 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:29:22 WARN  javac exited with exit code 1
+2024.10.03 22:29:22 INFO  time: compiled Practica_POO_25 in 0.41s
+2024.10.03 22:33:04 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:33:04 WARN  javac exited with exit code 1
+2024.10.03 22:33:04 INFO  time: compiled Practica_POO_25 in 0.31s
+2024.10.03 22:33:13 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.03 22:33:13 INFO  no build target found for /Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolitécnicadeMadrid/UNIVERSIDAD/Programacion Orientada a Objetos/Practica_POO_25/src/main/java/matchmake.java. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.03 22:33:13 INFO  no build target found for /Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolitécnicadeMadrid/UNIVERSIDAD/Programacion Orientada a Objetos/Practica_POO_25/src/main/java/matchmake.java. Using presentation compiler with project's scala-library version: 3.3.3
+2024.10.03 22:33:23 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:33:23 WARN  javac exited with exit code 1
+2024.10.03 22:33:23 INFO  time: compiled Practica_POO_25 in 0.3s
+2024.10.03 22:33:55 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:33:55 WARN  javac exited with exit code 1
+2024.10.03 22:33:55 INFO  time: compiled Practica_POO_25 in 0.35s
+2024.10.03 22:34:51 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:34:51 WARN  javac exited with exit code 1
+2024.10.03 22:34:51 INFO  time: compiled Practica_POO_25 in 0.31s
+2024.10.03 22:35:03 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:35:03 WARN  javac exited with exit code 1
+2024.10.03 22:35:03 INFO  time: compiled Practica_POO_25 in 0.3s
+2024.10.03 22:35:08 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:35:08 WARN  javac exited with exit code 1
+2024.10.03 22:35:08 INFO  time: compiled Practica_POO_25 in 0.3s
+2024.10.03 22:35:36 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:35:36 WARN  javac exited with exit code 1
+2024.10.03 22:35:36 INFO  time: compiled Practica_POO_25 in 0.3s
+2024.10.03 22:35:42 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:35:42 WARN  javac exited with exit code 1
+2024.10.03 22:35:42 INFO  time: compiled Practica_POO_25 in 0.23s
+2024.10.03 22:35:59 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:35:59 WARN  javac exited with exit code 1
+2024.10.03 22:35:59 INFO  time: compiled Practica_POO_25 in 0.29s
+Oct 03, 2024 10:36:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 635
+2024.10.03 22:36:21 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:36:21 WARN  javac exited with exit code 1
+2024.10.03 22:36:21 INFO  time: compiled Practica_POO_25 in 0.3s
+2024.10.03 22:36:24 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:36:24 WARN  javac exited with exit code 1
+2024.10.03 22:36:24 INFO  time: compiled Practica_POO_25 in 0.3s
+2024.10.03 22:36:36 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:36:36 WARN  javac exited with exit code 1
+2024.10.03 22:36:36 INFO  time: compiled Practica_POO_25 in 0.28s
+2024.10.03 22:36:47 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:36:47 WARN  javac exited with exit code 1
+2024.10.03 22:36:47 INFO  time: compiled Practica_POO_25 in 0.28s
+2024.10.03 22:36:50 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:36:50 WARN  javac exited with exit code 1
+2024.10.03 22:36:50 INFO  time: compiled Practica_POO_25 in 0.3s
+2024.10.03 22:36:54 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:36:54 WARN  javac exited with exit code 1
+2024.10.03 22:36:54 INFO  time: compiled Practica_POO_25 in 0.31s
+2024.10.03 22:37:26 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:37:26 WARN  javac exited with exit code 1
+2024.10.03 22:37:26 INFO  time: compiled Practica_POO_25 in 0.3s
+2024.10.03 22:37:33 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:37:33 WARN  javac exited with exit code 1
+2024.10.03 22:37:33 INFO  time: compiled Practica_POO_25 in 0.3s
+2024.10.03 22:37:36 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:37:36 WARN  javac exited with exit code 1
+2024.10.03 22:37:36 INFO  time: compiled Practica_POO_25 in 0.3s
+2024.10.03 22:38:00 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:38:00 WARN  javac exited with exit code 1
+2024.10.03 22:38:00 INFO  time: compiled Practica_POO_25 in 0.31s
+2024.10.03 22:39:05 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:39:05 WARN  javac exited with exit code 1
+2024.10.03 22:39:05 INFO  time: compiled Practica_POO_25 in 0.31s
+2024.10.03 22:39:13 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:39:13 WARN  javac exited with exit code 1
+2024.10.03 22:39:13 INFO  time: compiled Practica_POO_25 in 0.22s
+Oct 03, 2024 10:39:14 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:39:14 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake.java:32:2: stale bloop error:  error: illegal start of type
+}
+ ^
+Oct 03, 2024 10:39:18 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:39:18 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake.java:32:2: stale bloop error:  error: illegal start of type
+}
+ ^
+Oct 03, 2024 10:39:19 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:39:18 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake.java:32:2: stale bloop error:  error: illegal start of type
+}
+ ^
+Oct 03, 2024 10:39:20 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:39:20 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake.java:32:2: stale bloop error:  error: illegal start of type
+}
+ ^
+Oct 03, 2024 10:40:09 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:40:09 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake.java:32:2: stale bloop error:  error: illegal start of type
+}
+ ^
+Oct 03, 2024 10:40:12 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:40:12 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake.java:32:2: stale bloop error:  error: illegal start of type
+}
+ ^
+Oct 03, 2024 10:40:12 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:40:12 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake.java:32:2: stale bloop error:  error: illegal start of type
+}
+ ^
+Oct 03, 2024 10:40:12 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:40:12 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake.java:32:2: stale bloop error:  error: illegal start of type
+}
+ ^
+Oct 03, 2024 10:40:13 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:40:13 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake.java:32:2: stale bloop error:  error: illegal start of type
+}
+ ^
+Oct 03, 2024 10:40:13 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:40:13 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake.java:32:2: stale bloop error:  error: illegal start of type
+}
+ ^
+Oct 03, 2024 10:40:14 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:40:13 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake.java:32:2: stale bloop error:  error: illegal start of type
+}
+ ^
+Oct 03, 2024 10:40:15 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:40:15 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake.java:32:2: stale bloop error:  error: illegal start of type
+}
+ ^
+Oct 03, 2024 10:40:16 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:40:16 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake.java:32:2: stale bloop error:  error: illegal start of type
+}
+ ^
+Oct 03, 2024 10:40:18 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:40:18 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake.java:32:2: stale bloop error:  error: illegal start of type
+}
+ ^
+Oct 03, 2024 10:40:19 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:40:19 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake.java:32:2: stale bloop error:  error: illegal start of type
+}
+ ^
+Oct 03, 2024 10:40:21 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:40:21 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake.java:32:2: stale bloop error:  error: illegal start of type
+}
+ ^
+2024.10.03 22:40:22 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:40:22 WARN  javac exited with exit code 1
+2024.10.03 22:40:22 INFO  time: compiled Practica_POO_25 in 0.29s
+2024.10.03 22:40:24 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:40:24 WARN  javac exited with exit code 1
+2024.10.03 22:40:24 INFO  time: compiled Practica_POO_25 in 0.3s
+2024.10.03 22:40:36 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:40:36 WARN  javac exited with exit code 1
+2024.10.03 22:40:36 INFO  time: compiled Practica_POO_25 in 0.29s
+2024.10.03 22:41:46 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:41:46 WARN  javac exited with exit code 1
+2024.10.03 22:41:46 INFO  time: compiled Practica_POO_25 in 0.2s
+2024.10.03 22:43:22 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:43:22 WARN  javac exited with exit code 1
+2024.10.03 22:43:22 INFO  time: compiled Practica_POO_25 in 0.29s
+2024.10.03 22:45:18 INFO  compiling practica_poo_25 (7 java sources)
+2024.10.03 22:45:18 WARN  javac exited with exit code 1
+2024.10.03 22:45:18 INFO  time: compiled Practica_POO_25 in 0.36s
+2024.10.03 22:53:35 INFO  compiling practica_poo_25 (8 java sources)
+2024.10.03 22:53:35 WARN  javac exited with exit code 1
+2024.10.03 22:53:35 INFO  time: compiled Practica_POO_25 in 0.45s
+2024.10.03 22:53:37 INFO  compiling practica_poo_25 (8 java sources)
+2024.10.03 22:53:37 WARN  javac exited with exit code 1
+2024.10.03 22:53:37 INFO  time: compiled Practica_POO_25 in 0.33s
+2024.10.03 22:54:20 INFO  compiling practica_poo_25 (8 java sources)
+2024.10.03 22:54:20 WARN  javac exited with exit code 1
+2024.10.03 22:54:20 INFO  time: compiled Practica_POO_25 in 0.23s
+2024.10.03 22:54:26 INFO  compiling practica_poo_25 (8 java sources)
+2024.10.03 22:54:26 WARN  javac exited with exit code 1
+2024.10.03 22:54:26 INFO  time: compiled Practica_POO_25 in 0.32s
+2024.10.03 22:54:30 INFO  compiling practica_poo_25 (8 java sources)
+2024.10.03 22:54:30 WARN  javac exited with exit code 1
+2024.10.03 22:54:30 INFO  time: compiled Practica_POO_25 in 0.32s
+2024.10.03 22:54:33 INFO  compiling practica_poo_25 (8 java sources)
+2024.10.03 22:54:33 WARN  javac exited with exit code 1
+2024.10.03 22:54:33 INFO  time: compiled Practica_POO_25 in 0.29s
+2024.10.03 22:54:38 INFO  compiling practica_poo_25 (8 java sources)
+2024.10.03 22:54:38 WARN  javac exited with exit code 1
+2024.10.03 22:54:38 INFO  time: compiled Practica_POO_25 in 0.32s
+2024.10.03 22:54:54 INFO  compiling practica_poo_25 (8 java sources)
+2024.10.03 22:54:54 WARN  javac exited with exit code 1
+2024.10.03 22:54:54 INFO  time: compiled Practica_POO_25 in 0.3s
+2024.10.03 22:54:57 INFO  compiling practica_poo_25 (8 java sources)
+2024.10.03 22:54:57 WARN  javac exited with exit code 1
+2024.10.03 22:54:57 INFO  time: compiled Practica_POO_25 in 0.3s
+2024.10.03 22:55:11 INFO  compiling practica_poo_25 (8 java sources)
+2024.10.03 22:55:11 WARN  javac exited with exit code 1
+2024.10.03 22:55:11 INFO  time: compiled Practica_POO_25 in 0.31s
+2024.10.03 22:56:04 INFO  compiling practica_poo_25 (8 java sources)
+2024.10.03 22:56:04 WARN  javac exited with exit code 1
+2024.10.03 22:56:04 INFO  time: compiled Practica_POO_25 in 0.23s
+2024.10.03 22:56:09 INFO  compiling practica_poo_25 (8 java sources)
+2024.10.03 22:56:09 WARN  javac exited with exit code 1
+2024.10.03 22:56:09 INFO  time: compiled Practica_POO_25 in 0.31s
+2024.10.03 22:56:29 INFO  compiling practica_poo_25 (8 java sources)
+2024.10.03 22:56:29 WARN  javac exited with exit code 1
+2024.10.03 22:56:29 INFO  time: compiled Practica_POO_25 in 0.23s
+Oct 03, 2024 10:56:31 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:31 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:31 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:31 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:33 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:33 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:38 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:38 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:38 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:38 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:40 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:40 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:40 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:40 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:41 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:41 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:42 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:41 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:43 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:43 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:43 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:43 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:44 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:43 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:45 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:45 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:46 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:45 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:46 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:45 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:47 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:47 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:47 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:47 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:47 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:47 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:47 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:47 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:47 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:47 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:48 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:48 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:48 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:48 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:49 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:48 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:49 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:48 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:49 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:49 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:49 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:49 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:50 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:50 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:51 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:50 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:51 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:50 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:52 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:52 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:52 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:52 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:55 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:55 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+Oct 03, 2024 10:56:57 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$8
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2024.10.03 22:56:57 INFO  file:///Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolite%CC%81cnicadeMadrid/UNIVERSIDAD/Programacion%20Orientada%20a%20Objetos/Practica_POO_25/src/main/java/model/Matchmake_Controller.java:21:2: stale bloop error:  error: '(' expected
+}
+ ^
+2024.10.03 22:56:58 INFO  compiling practica_poo_25 (8 java sources)
+2024.10.03 22:56:58 WARN  javac exited with exit code 1
+2024.10.03 22:56:58 INFO  time: compiled Practica_POO_25 in 0.31s
+2024.10.03 22:58:02 INFO  compiling practica_poo_25 (8 java sources)
+2024.10.03 22:58:02 WARN  javac exited with exit code 1
+2024.10.03 22:58:02 INFO  time: compiled Practica_POO_25 in 0.29s
+2024.10.03 22:58:05 INFO  Shutting down server
+2024.10.03 22:58:05 INFO  shutting down Metals
+2024.10.03 22:58:05 INFO  Shut down connection with build server.
+2024.10.03 22:58:05 INFO  Exiting server
