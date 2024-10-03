@@ -1,5 +1,5 @@
 package controller;
-
+import java.util.ArrayList;
 import java.util.HashMap;
 import model.Player;
 import view.Player_View; 
@@ -27,8 +27,7 @@ public class Player_Controller
         PlayerList = playerList;
     }
 
-    //To DO
-    //modify players score searching by its name
+    
     public void setPlayerScore(String name,float score){
         if(PlayerList.get(name)!= null)
         {
@@ -53,35 +52,29 @@ public class Player_Controller
         }
     }
 
-    public void show()
+    public void showList()
     {
-        this.playerview.show(PlayerList);
+        this.playerview.showList(PlayerList);
     }
 
+    //TO DO
     public void rank()
     {
+        
+        ArrayList<Player> players = new ArrayList<>(PlayerList.values());
+        while(!players.isEmpty())
+        {
+            Player aux = players.get(0);
+            for(Player player:players)
+            {
+                if(aux.getScore()<player.getScore())
+                    aux = player;
+                    
+            }
+            this.playerview.showPlayer(aux);
 
+            players.remove(aux);
+        }
     }
-
-    public void show_matchmake()
-    {
-
-    }
-
-    public void clear_matchmake()
-    {
-
-    }
-
-    public void matchmake(Player p1,Player p2)
-    {
-
-    }
-
-    public void random_matchmake()
-    {
-
-    }
-
     
 }
