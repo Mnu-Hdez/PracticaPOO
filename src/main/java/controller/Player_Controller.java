@@ -57,7 +57,7 @@ public class Player_Controller
         this.playerview.showList(PlayerList);
     }
 
-    //TO DO
+    
     public void rank()
     {
         
