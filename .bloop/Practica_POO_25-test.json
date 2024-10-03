@@ -1,0 +1,121 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "Practica_POO_25-test",
+        "directory": "/Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolitécnicadeMadrid/UNIVERSIDAD/Programacion Orientada a Objetos/Practica_POO_25",
+        "workspaceDir": "/Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolitécnicadeMadrid/UNIVERSIDAD/Programacion Orientada a Objetos/Practica_POO_25",
+        "sources": [
+            "/Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolitécnicadeMadrid/UNIVERSIDAD/Programacion Orientada a Objetos/Practica_POO_25/src/test/java"
+        ],
+        "dependencies": [
+            "Practica_POO_25"
+        ],
+        "classpath": [
+            "/Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolitécnicadeMadrid/UNIVERSIDAD/Programacion Orientada a Objetos/Practica_POO_25/target/test-classes",
+            "/Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolitécnicadeMadrid/UNIVERSIDAD/Programacion Orientada a Objetos/Practica_POO_25/target/classes",
+            "/Users/manuhdezz/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar"
+        ],
+        "out": "/Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolitécnicadeMadrid/UNIVERSIDAD/Programacion Orientada a Objetos/Practica_POO_25/target",
+        "classesDir": "/Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolitécnicadeMadrid/UNIVERSIDAD/Programacion Orientada a Objetos/Practica_POO_25/target/test-classes",
+        "resources": [
+            "/Users/manuhdezz/Library/CloudStorage/OneDrive-UniversidadPolitécnicadeMadrid/UNIVERSIDAD/Programacion Orientada a Objetos/Practica_POO_25/src/test/resources"
+        ],
+        "java": {
+            "options": [
+                "-g",
+                "-encoding",
+                "UTF-8"
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework",
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "utest.runner.Framework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    {
+                        "args": [
+                            "-v",
+                            "-a"
+                        ],
+                        "framework": {
+                            "names": [
+                                "com.novocode.junit.JUnitFramework"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/Users/manuhdezz/Library/Java/JavaVirtualMachines/openjdk-23/Contents/Home",
+                "options": [
+                    
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "junit",
+                    "name": "junit",
+                    "version": "3.8.1",
+                    "artifacts": [
+                        {
+                            "name": "junit",
+                            "path": "/Users/manuhdezz/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar"
+                        },
+                        {
+                            "name": "junit",
+                            "classifier": "sources",
+                            "path": "/Users/manuhdezz/.m2/repository/junit/junit/3.8.1/junit-3.8.1-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "test"
+        ]
+    }
+}

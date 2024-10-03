@@ -2,11 +2,17 @@ package model;
 public class Player
 {
     private String name;
-    private float score;
+    private double score;
 
     public Player(String name)
     {
         this.name = name;
+    }
+
+    public Player(String name,double score)
+    {
+        this.name = name;
+        this.score = score;
     }
 
     public String getName() {
@@ -17,11 +23,11 @@ public class Player
         this.name = name;
     }
 
-    public float getScore() {
+    public double getScore() {
         return score;
     }
 
-    public void setScore(float score) {
+    public void setScore(double score) {
         this.score = score;
     }
     
