@@ -1,5 +1,6 @@
 package controller;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import model.Player;
 import view.Player_View; 
@@ -62,15 +63,11 @@ public class Player_Controller
     {
         
         ArrayList<Player> players = new ArrayList<>(PlayerList.values());
+        Collections.sort(players);
         while(!players.isEmpty())
         {
-            Player aux = players.get(0);
-            for(Player player:players)
-            {
-                if(aux.getScore()<player.getScore())
-                    aux = player;
-                    
-            }
+            Player aux = players.get(players.size()-1);
+            
             this.playerview.showPlayer(aux);
 
             players.remove(aux);
