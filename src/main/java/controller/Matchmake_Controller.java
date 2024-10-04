@@ -1,5 +1,6 @@
 package controller;
 import java.util.HashMap;
+import java.util.ArrayList;
 import model.Matchmake;
 import model.Player;
 
@@ -13,9 +14,12 @@ public class Matchmake_Controller
     }
 
     //revisar logica hashmaps
-    public void random_matchmake()
+    public void random_matchmake(ArrayList<Player> playerList)
     {
-        //TO DO
+        if( playerList.size() % 2 == 0)
+        {
+            //finish code
+        }
     }
 
     //CHECK
