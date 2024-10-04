@@ -37,20 +37,26 @@ public class Player_Controller
 
     }
     
-    public void createPlayer(String name)
+    public boolean createPlayer(String name)
     {
+        boolean flag = false;
         if(PlayerList.get(name)==null)
         {
             PlayerList.put(name,new Player(name));
+            flag = true;
         }
+        return flag;
     }
 
-    public void deletePlayer(String name)
+    public boolean deletePlayer(String name)
     {
+        boolean flag = false;
         if(PlayerList.get(name)!= null)
         {
             PlayerList.remove(name);
+            flag = true;
         }
+        return flag;
     }
 
     public void showList()
@@ -69,7 +75,7 @@ public class Player_Controller
             Player aux = players.get(players.size()-1);
             
             this.playerview.showPlayer(aux);
-
+            
             players.remove(aux);
         }
     }
