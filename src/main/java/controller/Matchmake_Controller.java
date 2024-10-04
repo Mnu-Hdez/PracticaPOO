@@ -18,15 +18,27 @@ public class Matchmake_Controller
         //TO DO
     }
 
-    //revisar
+    //CHECK
     public void matchmake(Player playerA, Player playerB)
     {
-        Player aux = matchmake.get(playerA).getPlayerB();
-        if(!matchmake.containsKey(playerA) || !aux.equals(playerA))
-        {
-            Matchmake aux_match = new Matchmake(playerA, playerB);
-            matchmake.put(playerA, aux_match);
-        }
+        // Player aux = matchmake.get(playerA).getPlayerB();
+        if(!matchmake.containsKey(playerA)) //PlayerA not in the list
+        {    
+            //check if PlayerB has matchmake with PlayerA
+            if(!(matchmake.get(playerB)).getPlayerB.equals(playerA)) 
+                {
+                    Matchmake aux_match = new Matchmake(playerA, playerB);
+                    matchmake.put(playerA, aux_match);
+                }
+        }else
+                {
+                //matchmake has a PlayerA and checks for PlayerB
+                if(!(matchmake.get(playerA)).getPlayerB.equals(playerB))
+                    {
+                        Matchmake aux_match = new Matchmake(playerA, playerB);
+                        matchmake.put(playerA, aux_match);
+                    }
+                }
 
     }
 
