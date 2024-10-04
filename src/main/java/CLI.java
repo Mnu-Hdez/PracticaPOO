@@ -17,7 +17,7 @@ public class CLI
         this.scanner = scanner;
     }
 
-    public String scan()
+    public String getCommand()
     {
         return this.scanner.nextLine();
     }
