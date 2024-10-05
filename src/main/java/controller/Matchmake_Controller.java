@@ -22,7 +22,21 @@ public class Matchmake_Controller
     {
         if( playerList.size() % 2 == 0)
         {
+            int p1,p2;
+            while(!playerList.isEmpty())
+            {
+
             //finish code
+            //select random 1
+            //select random 2
+            
+            Player playerA = playerList.get(p1);
+            Player playerB = playerList.get(p2);
+            matchmake.put(playerA,new Matchmake(playerA,playerB);
+
+            playerList.remove(p1);
+            playerList.remove(p2);
+            } 
         }
     }
 
@@ -61,9 +75,9 @@ public class Matchmake_Controller
         }
 
     }
-    //TO DO
+    //CHECK
     public void clear_matchmaking()
     {
-
+        this.matchmake = new HashMap<Player,Matchmake>();
     }
 }
