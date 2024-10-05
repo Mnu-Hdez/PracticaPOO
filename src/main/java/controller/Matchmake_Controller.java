@@ -17,27 +17,33 @@ public class Matchmake_Controller
         this.matchmake = new HashMap<Player,Matchmake>();
     }
 
-    //revisar logica hashmaps
-    public void random_matchmake(ArrayList<Player> playerList)
+    //CHECK
+    public boolean random_matchmake(ArrayList<Player> playerList)
     {
+        boolean flag = false;
         if( playerList.size() % 2 == 0)
         {
+            flag = true;
             int p1,p2;
             while(!playerList.isEmpty())
             {
-
-            //finish code
-            //select random 1
-            //select random 2
+                Random random = new Random();
+                p1 = random.nextInt(playerList.size());
+                p2 = random.nextInt(playerList.size());
+                while(p1 == p2)
+                {
+                   p2 = random.nextInt(playerList.size()); 
+                }
             
-            Player playerA = playerList.get(p1);
-            Player playerB = playerList.get(p2);
-            matchmake.put(playerA,new Matchmake(playerA,playerB);
+                Player playerA = playerList.get(p1);
+                Player playerB = playerList.get(p2);
+                matchmake.put(playerA,new Matchmake(playerA,playerB);
 
-            playerList.remove(p1);
-            playerList.remove(p2);
+                playerList.remove(p1);
+                playerList.remove(p2);
             } 
         }
+        return flag; 
     }
 
     //CHECK
