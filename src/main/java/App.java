@@ -109,7 +109,7 @@ public class App
             case "random_matchmake":
                 //fix 
                  
-                matchmakeCont.random_matchmake(/*Lista o estructura con los jugadores */);
+                // matchmakeCont.random_matchmake(/*Lista o estructura con los jugadores */);
                 System.out.println();
                 break;
                 
