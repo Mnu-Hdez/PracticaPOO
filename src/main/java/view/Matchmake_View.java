@@ -1,15 +1,27 @@
 package view;
 
+import java.util.HashMap;
+
+import controller.Matchmake_Controller;
 import model.Matchmake;
+import model.Player;
 
 public class Matchmake_View
 {
     public Matchmake_View(){}
 
-    public void show(Matchmake matchmake)
+    private void show(Matchmake matchmake)
     {
         matchmake.toString();
     }
-    
+
+    public void showList(HashMap<Player, Matchmake> matchmakes)
+    {
+        for(Matchmake aux: matchmakes.values())
+        {
+            show(aux);
+        }
+    }
+
 }
 

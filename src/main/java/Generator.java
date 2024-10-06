@@ -3,15 +3,17 @@ import model.*;
 public class Generator 
 {
     private Player_Controller pController;
+    private Matchmake_Controller mController;
 
     public Generator(Player_Controller pController)
     {
         this.pController = pController;
     }
 
-    public Generator()
+    public Generator(Player_Controller pController, Matchmake_Controller match_controller)
     {
-
+        this.pController = pController;
+        this.mController = match_controller;
     }
 
 

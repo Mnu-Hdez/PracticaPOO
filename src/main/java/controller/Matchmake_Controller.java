@@ -6,15 +6,26 @@ import java.util.ArrayList;
 
 import model.Matchmake;
 import model.Player;
+import view.Matchmake_View;
 
 
 public class Matchmake_Controller
 {
     private HashMap<Player,Matchmake> matchmake;
+    private Matchmake_View matchView;
 
     public Matchmake_Controller()
     {
         this.matchmake = new HashMap<Player,Matchmake>();
+    }
+    
+    public HashMap<Player, Matchmake> getMatchmake() {
+        return matchmake;
+    }
+
+
+    public void setMatchmake(HashMap<Player, Matchmake> matchmake) {
+        this.matchmake = matchmake;
     }
 
     //CHECK
@@ -73,6 +84,10 @@ public class Matchmake_Controller
         return flag;
     }
 
+    public void showMatchmaking()
+    {
+        matchView.showList(this.matchmake);
+    }
     //revisar logica de hashmap
     public void erase_matchmaking(Matchmake matchmaking)
     {
@@ -89,4 +104,7 @@ public class Matchmake_Controller
     {
         this.matchmake = new HashMap<Player,Matchmake>();
     }
+
+
+    
 }

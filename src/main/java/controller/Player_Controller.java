@@ -26,7 +26,6 @@ public class Player_Controller
     public void setPlayerList(HashMap<String,Player> playerList) {
         PlayerList = playerList;
     }
-
     
     public void setPlayerScore(String name,float score){
         if(PlayerList.get(name)!= null)
@@ -47,6 +46,15 @@ public class Player_Controller
         return flag;
     }
 
+    public Player getPlayer(String name)
+    {
+        if(PlayerList.get(name)!=null)
+        {
+            return PlayerList.get(name);
+        }
+        return null;
+    }
+
     public boolean deletePlayer(String name)
     {
         boolean flag = false;
@@ -65,6 +73,7 @@ public class Player_Controller
     }
 
     
+
     public void rank()
     {
         
