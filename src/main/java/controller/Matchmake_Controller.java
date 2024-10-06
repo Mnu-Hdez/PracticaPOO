@@ -87,6 +87,7 @@ public class Matchmake_Controller
     //CHECK
     public void clear_matchmaking()
     {
+        console.log(matchmake.size());
         this.matchmake = new HashMap<Player,Matchmake>();
     }
 }
