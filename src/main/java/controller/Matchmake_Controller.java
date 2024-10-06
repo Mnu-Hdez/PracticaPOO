@@ -47,8 +47,9 @@ public class Matchmake_Controller
     }
 
     //CHECK
-    public void matchmake(Player playerA, Player playerB)
+    public boolean matchmake(Player playerA, Player playerB)
     {
+        boolean flag = false;
         // Player aux = matchmake.get(playerA).getPlayerB();
         if(!matchmake.containsKey(playerA)) //PlayerA not in the list
         {    
@@ -57,6 +58,7 @@ public class Matchmake_Controller
                 {
                     Matchmake aux_match = new Matchmake(playerA, playerB);
                     matchmake.put(playerA, aux_match);
+                    flag = true;
                 }
         }else
                 {
@@ -65,9 +67,10 @@ public class Matchmake_Controller
                     {
                         Matchmake aux_match = new Matchmake(playerA, playerB);
                         matchmake.put(playerA, aux_match);
+                        flag = true;
                     }
                 }
-
+        return flag;
     }
 
     //revisar logica de hashmap
