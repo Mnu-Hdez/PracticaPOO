@@ -1,6 +1,5 @@
 package controller;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import model.Player;
 import view.Player_View; 
@@ -37,26 +36,20 @@ public class Player_Controller
 
     }
     
-    public boolean createPlayer(String name)
+    public void createPlayer(String name)
     {
-        boolean flag = false;
         if(PlayerList.get(name)==null)
         {
             PlayerList.put(name,new Player(name));
-            flag = true;
         }
-        return flag;
     }
 
-    public boolean deletePlayer(String name)
+    public void deletePlayer(String name)
     {
-        boolean flag = false;
         if(PlayerList.get(name)!= null)
         {
             PlayerList.remove(name);
-            flag = true;
         }
-        return flag;
     }
 
     public void showList()
@@ -69,13 +62,17 @@ public class Player_Controller
     {
         
         ArrayList<Player> players = new ArrayList<>(PlayerList.values());
-        Collections.sort(players);
         while(!players.isEmpty())
         {
-            Player aux = players.get(players.size()-1);
-            
+            Player aux = players.get(0);
+            for(Player player:players)
+            {
+                if(aux.getScore()<player.getScore())
+                    aux = player;
+                    
+            }
             this.playerview.showPlayer(aux);
-            
+
             players.remove(aux);
         }
     }

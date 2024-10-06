@@ -37,7 +37,7 @@ public class Matchmake_Controller
             
                 Player playerA = playerList.get(p1);
                 Player playerB = playerList.get(p2);
-                matchmake.put(playerA,new Matchmake(playerA,playerB);
+                matchmake.put(playerA,new Matchmake(playerA,playerB));
 
                 playerList.remove(p1);
                 playerList.remove(p2);
@@ -54,7 +54,7 @@ public class Matchmake_Controller
         if(!matchmake.containsKey(playerA)) //PlayerA not in the list
         {    
             //check if PlayerB has matchmake with PlayerA
-            if(!(matchmake.get(playerB)).getPlayerB.equals(playerA)) 
+            if(!(matchmake.get(playerB)).getPlayerB().equals(playerA)) 
                 {
                     Matchmake aux_match = new Matchmake(playerA, playerB);
                     matchmake.put(playerA, aux_match);
@@ -63,7 +63,7 @@ public class Matchmake_Controller
         }else
                 {
                 //matchmake has a PlayerA and checks for PlayerB
-                if(!(matchmake.get(playerA)).getPlayerB.equals(playerB))
+                if(!(matchmake.get(playerA)).getPlayerB().equals(playerB))
                     {
                         Matchmake aux_match = new Matchmake(playerA, playerB);
                         matchmake.put(playerA, aux_match);
@@ -87,7 +87,6 @@ public class Matchmake_Controller
     //CHECK
     public void clear_matchmaking()
     {
-        console.log(matchmake.size());
         this.matchmake = new HashMap<Player,Matchmake>();
     }
 }
