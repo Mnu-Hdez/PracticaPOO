@@ -11,6 +11,9 @@ import view.Matchmake_View;
 
 public class Matchmake_Controller
 {
+    // modificar el hashmap a collections(cualquier tipo)
+    //usar hashSet para hacerlo más ágil
+    // mejor arraylist
     private HashMap<Player,Matchmake> matchmake;
     private Matchmake_View matchView;
 
