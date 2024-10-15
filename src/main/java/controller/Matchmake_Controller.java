@@ -22,16 +22,16 @@ public class Matchmake_Controller
         this.matchmake = matchmake;
     }
     
-    public HashMap<Player, Matchmake> getMatchmake() {
+    public ArrayList<Matchmake> getMatchmake() {
         return matchmake;
     }
 
 
-    public void setMatchmake(HashMap<Player, Matchmake> matchmake) {
+    public void setMatchmake(ArrayList<, Matchmake> matchmake) {
         this.matchmake = matchmake;
     }
 
-    //CHECK
+    //CHECK --> fix
     public boolean random_matchmake(ArrayList<Player> playerList)
     {
         boolean flag = false;
@@ -60,7 +60,7 @@ public class Matchmake_Controller
         return flag; 
     }
 
-    //CHECK
+    //CHECK --> fix
     public boolean matchmake(Player playerA, Player playerB)
     {
         boolean flag = false;
@@ -87,11 +87,12 @@ public class Matchmake_Controller
         return flag;
     }
 
+    //FIX IN THE VIEW ALSO
     public void showMatchmaking()
     {
         matchView.showList(this.matchmake);
     }
-    //revisar logica de hashmap
+    //RECODE FOR CHANGES MADE(HASHMAP to ARRAYLIST)
     public void erase_matchmaking(Matchmake matchmaking)
     {
         Player aux = matchmake.get(matchmaking.getPlayerA()).getPlayerA();
