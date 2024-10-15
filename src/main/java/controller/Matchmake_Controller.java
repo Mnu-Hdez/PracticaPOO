@@ -3,7 +3,7 @@ package controller;
 import java.util.Random;
 import java.util.HashMap;
 import java.util.ArrayList;
-
+import java.util.Collections;
 import model.Matchmake;
 import model.Player;
 import view.Matchmake_View;
@@ -17,9 +17,9 @@ public class Matchmake_Controller
     private Collection <Matchmake> matchmake;
     private Matchmake_View matchView;
 
-    public Matchmake_Controller()
+    public Matchmake_Controller(Collection <Matchmake> matchmake)
     {
-        this.matchmake = new HashMap<Player,Matchmake>();
+        this.matchmake = matchmake;
     }
     
     public HashMap<Player, Matchmake> getMatchmake() {
