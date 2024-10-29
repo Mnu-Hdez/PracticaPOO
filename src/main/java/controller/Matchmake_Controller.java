@@ -2,6 +2,7 @@ package controller;
 
 import java.util.Random;
 import java.util.HashMap;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 import model.Matchmake;
@@ -12,21 +13,21 @@ import view.Matchmake_View;
 public class Matchmake_Controller
 {
     // modificar el hashmap a collections(cualquier tipo)
-    //usar arrwylist para hacerlo más ágil
-    private Collection <Matchmake> matchmake;
+    //usar arraylist para hacerlo más ágil
+    private ArrayList <Matchmake> matchmake;
     private Matchmake_View matchView;
 
-    public Matchmake_Controller(Collection <Matchmake> matchmake)
+    public Matchmake_Controller(ArrayList <Matchmake> matchmake)
     {
         this.matchmake = matchmake;
     }
     
     public ArrayList<Matchmake> getMatchmake() {
-        return matchmake;
+        return this.matchmake;
     }
 
 
-    public void setMatchmake(ArrayList<, Matchmake> matchmake) {
+    public void setMatchmake(ArrayList<Matchmake> matchmake) {
         this.matchmake = matchmake;
     }
 
@@ -64,13 +65,13 @@ public class Matchmake_Controller
     {
         boolean flag = true;
         
-        for(Matchmake match: PlayerList)
+        for(Matchmake match: matchmake)
         {
-            if(match.getPlayerA().equals(playerA) && match.getPlayerB().equals(PlayerB))
+            if(match.getPlayerA().equals(playerA) && match.getPlayerB().equals(playerB))
             {
                 return false;
             }
-            else if(match.getPlayerA().equals(playerB) && match.getPlayerB().equals(PlayerA))
+            else if(match.getPlayerA().equals(playerB) && match.getPlayerB().equals(playerA))
             {
                 return false;
             }
@@ -78,7 +79,7 @@ public class Matchmake_Controller
         
         if(flag)
         {
-            this.PlayerList.add(new Matchmake(PlayerA,PlayerB));
+            this.matchmake.add(new Matchmake(playerA,playerB));
         }
         return flag;
     }

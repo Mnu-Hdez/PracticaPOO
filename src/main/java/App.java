@@ -1,8 +1,5 @@
-import javax.management.RuntimeErrorException;
-
 import console.CLI;
 import controller.*;
-import model.Player;
 public class App 
 {
     private static CLI console ;

@@ -31,9 +31,11 @@ public class Player_Controller
         // never below -999999.0
         if(PlayerList.get(name)!= null)
         {
-            PlayerList.get(name).setScore(score);
+            if(score >= -999999.0)
+            {
+                PlayerList.get(name).setScore(score);
+            }else System.out.println("Un jugador no puede tener puntuacion menor a -999999.0");
         }
-
     }
     
     public boolean createPlayer(String name)
