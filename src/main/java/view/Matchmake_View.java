@@ -1,9 +1,7 @@
 package view;
 
-import java.util.HashMap;
-
+import java.util.ArrayList;
 import model.Matchmake;
-import model.Player;
 
 public class Matchmake_View
 {
@@ -14,11 +12,11 @@ public class Matchmake_View
         matchmake.toString();
     }
 
-    public void showList(HashMap<Player, Matchmake> matchmakes)
+    public void showList(ArrayList <Matchmake> matchmakes)
     {
-        for(Matchmake aux: matchmakes.values())
+        for(Matchmake viewer: matchmakes)
         {
-            show(aux);
+            show(viewer);
         }
     }
 

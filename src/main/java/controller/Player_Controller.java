@@ -28,7 +28,6 @@ public class Player_Controller
     }
     
     public void setPlayerScore(String name,float score){
-        // never below -999999.0
         if(PlayerList.get(name)!= null)
         {
             if(score >= -999999.0)

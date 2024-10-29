@@ -12,8 +12,6 @@ import view.Matchmake_View;
 
 public class Matchmake_Controller
 {
-    // modificar el hashmap a collections(cualquier tipo)
-    //usar arraylist para hacerlo más ágil
     private ArrayList <Matchmake> matchmake;
     private Matchmake_View matchView;
 
@@ -51,7 +49,7 @@ public class Matchmake_Controller
             
                 Player playerA = playerList.get(p1);
                 Player playerB = playerList.get(p2);
-                matchmake.put(playerA,new Matchmake(playerA,playerB));
+                matchmake.add(new Matchmake(playerA,playerB));
 
                 playerList.remove(p1);
                 playerList.remove(p2);
@@ -60,7 +58,7 @@ public class Matchmake_Controller
         return flag; 
     }
 
-    //FIXED
+    
     public boolean matchmake(Player playerA, Player playerB)
     {
         boolean flag = true;
@@ -84,23 +82,19 @@ public class Matchmake_Controller
         return flag;
     }
 
-    //FIX IN THE VIEW ALSO
     public void showMatchmaking()
     {
         matchView.showList(this.matchmake);
     }
-    //RECODE FOR CHANGES MADE(HASHMAP to ARRAYLIST)
+    
     public void erase_matchmaking(Matchmake matchmaking)
     {
-        Player aux = matchmake.get(matchmaking.getPlayerA()).getPlayerA();
-
-        if(matchmake.get(aux).getPlayerB().equals(matchmaking.getPlayerB()))
+        if(matchmake.contains(matchmaking))
         {
-            matchmake.remove(aux);
+            matchmake.remove(matchmaking);
         }
-
     }
-    //CHECK
+
     public void clear_matchmaking()
     {
         this.matchmake = new ArrayList<Matchmake>();
