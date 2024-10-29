@@ -1,5 +1,8 @@
+import java.util.ArrayList;
+import java.util.List;
 import console.CLI;
 import controller.*;
+import model.Player;
 public class App 
 {
     private static CLI console ;
@@ -67,7 +70,6 @@ public class App
                 if(playerCont.getPlayerList().isEmpty())
                 {
                     throw new RuntimeException("Player List is Empty \n");
-
                 }
                 playerCont.rank();
                 break;
@@ -104,9 +106,13 @@ public class App
                 break;
 
             case "random_matchmake":
-                //fix 
-                 
-                // matchmakeCont.random_matchmake(/*Lista o estructura con los jugadores */);
+                if(command_args.length != 1)
+                {
+                    throw new RuntimeException("random_matchmake command must have 1 arguments <random_matchmake> ");
+                }
+                //check
+                ArrayList<Player> playerList = new ArrayList<>(playerCont.getPlayerList().values());
+                matchmakeCont.random_matchmake(playerList);
                 System.out.println();
                 break;
                 

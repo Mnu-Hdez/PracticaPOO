@@ -1,10 +1,8 @@
 package controller;
 
 import java.util.Random;
-import java.util.HashMap;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Collections;
+
 import model.Matchmake;
 import model.Player;
 import view.Matchmake_View;
@@ -29,7 +27,6 @@ public class Matchmake_Controller
         this.matchmake = matchmake;
     }
 
-    //CHECK --> fix
     public boolean random_matchmake(ArrayList<Player> playerList)
     {
         boolean flag = false;

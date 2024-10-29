@@ -6,6 +6,7 @@ import view.Player_View;
 
 public class Player_Controller
 {
+    //habria que cambiar de hashmap a una ArrayList normal??
     private HashMap<String,Player> PlayerList;
     private Player_View playerview;
 
