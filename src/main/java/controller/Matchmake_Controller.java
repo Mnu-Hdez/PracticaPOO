@@ -12,8 +12,7 @@ import view.Matchmake_View;
 public class Matchmake_Controller
 {
     // modificar el hashmap a collections(cualquier tipo)
-    //usar hashSet para hacerlo más ágil
-    // mejor arraylist
+    //usar arrwylist para hacerlo más ágil
     private Collection <Matchmake> matchmake;
     private Matchmake_View matchView;
 
@@ -60,30 +59,27 @@ public class Matchmake_Controller
         return flag; 
     }
 
-    //CHECK --> fix
+    //FIXED
     public boolean matchmake(Player playerA, Player playerB)
     {
-        boolean flag = false;
-        // Player aux = matchmake.get(playerA).getPlayerB();
-        if(!matchmake.containsKey(playerA)) //PlayerA not in the list
-        {    
-            //check if PlayerB has matchmake with PlayerA
-            if(!(matchmake.get(playerB)).getPlayerB().equals(playerA)) 
-                {
-                    Matchmake aux_match = new Matchmake(playerA, playerB);
-                    matchmake.put(playerA, aux_match);
-                    flag = true;
-                }
-        }else
-                {
-                //matchmake has a PlayerA and checks for PlayerB
-                if(!(matchmake.get(playerA)).getPlayerB().equals(playerB))
-                    {
-                        Matchmake aux_match = new Matchmake(playerA, playerB);
-                        matchmake.put(playerA, aux_match);
-                        flag = true;
-                    }
-                }
+        boolean flag = true;
+        
+        for(Matchmake match: PlayerList)
+        {
+            if(match.getPlayerA().equals(playerA) && match.getPlayerB().equals(PlayerB))
+            {
+                return false;
+            }
+            else if(match.getPlayerA().equals(playerB) && match.getPlayerB().equals(PlayerA))
+            {
+                return false;
+            }
+        }
+        
+        if(flag)
+        {
+            this.PlayerList.add(new Matchmake(PlayerA,PlayerB));
+        }
         return flag;
     }
 
@@ -106,9 +102,6 @@ public class Matchmake_Controller
     //CHECK
     public void clear_matchmaking()
     {
-        this.matchmake = new HashMap<Player,Matchmake>();
+        this.matchmake = new ArrayList<Matchmake>();
     }
-
-
-    
 }
