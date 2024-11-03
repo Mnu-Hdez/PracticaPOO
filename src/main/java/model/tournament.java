@@ -2,21 +2,21 @@ package model;
 
 import java.util.Date;
 
-public class tournament {
+public class Tournament {
     private Date inicio;
     private Date fin;
     private String league;
     private String sport;
 
     
-    public tournament(Date inicio, Date fin, String league, String sport) {
+    public Tournament(Date inicio, Date fin, String league, String sport) {
         this.inicio = inicio;
         this.fin = fin;
         this.league = league;
         this.sport = sport;
     }
 
-    public tournament(String league, String sport)
+    public Tournament(String league, String sport)
     {
         this.league = league;
         this.sport = sport; 

@@ -1,5 +1,6 @@
-package model;
+package controller;
 
-public interface IPlayer {
+public interface IPlayer 
+{
 
 }

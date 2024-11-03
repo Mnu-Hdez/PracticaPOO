@@ -39,7 +39,7 @@ public class Player_Controller
     }
     
     public boolean createPlayer(String name)
-    {
+    { //FIX
         boolean flag = false;
         if(PlayerList.get(name)==null)
         {

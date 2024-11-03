@@ -1,6 +1,9 @@
 package model;
 
-public class Player extends User {
+import controller.IAdmin;
+import controller.IPlayer;
+
+public class Player extends User implements IPlayer,IAdmin{
 
     private double score;
     private String full_name;
@@ -9,11 +12,13 @@ public class Player extends User {
     //con su debida puntuacion en cada categoria
     //sino lista normal
 
+    
     // revisar los atributos y los constructores super()
-    public Player(double score, String dni, String full_name) {
-        this.dni = dni;
-        this.full_name = full_name;
+    public Player(String username, String password, String mail,double score, String dni, String full_name) 
+    {
+        super(username,password,mail);
         this.score = score;
+        this.dni = dni;
     }
 
     public String getFull_name() {

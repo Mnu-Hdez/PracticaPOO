@@ -2,7 +2,7 @@ package model;
 import java.math.*;
 import java.util.Collection;
 
-public class team 
+public class Team 
 {
     private String name;
     private Collection<Player> lineup;

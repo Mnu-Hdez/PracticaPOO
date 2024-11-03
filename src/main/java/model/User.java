@@ -4,12 +4,12 @@ public class User {
         protected String name;
         protected String password;
         protected String mail;
-    
-    
-        public User(String name,String dni,String mail)
+
+
+        public User(String name,String password,String mail)
         {
             this.name = name;
-            this.password = dni;
+            this.password = password;
             this.mail = mail;
         }
     
@@ -17,8 +17,8 @@ public class User {
             return password;
         }
 
-        public void setPassword(String dni) {
-            this.password = dni;
+        public void setPassword(String password) {
+            this.password = password;
         }
 
         public String getMail() {
@@ -36,8 +36,6 @@ public class User {
         public void setName(String name) {
             this.name = name;
         }
-    
-        
         
         @Override
         public String toString()

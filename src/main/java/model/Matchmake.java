@@ -30,7 +30,7 @@ public class Matchmake
     @Override
     public String toString()
     {
-        return (this.playerA.getName() + " vs " + this.playerB.getName());
+        return (this.playerA.getFull_name() + " vs " + this.playerB.getFull_name());
     }
     
 }
