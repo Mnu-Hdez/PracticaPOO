@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
 import console.CLI;
 import controller.*;
 import model.Player;
