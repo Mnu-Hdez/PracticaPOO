@@ -1,18 +1,17 @@
 package view;
 
 import model.Player;
-import java.util.HashMap;
+import java.util.*;
 
 public class Player_View {
     
     public Player_View(){}
     
-    public void showList(HashMap<String,Player> playerList)
+    public void showList(Collection<Player> playerList)
     {
-        for(HashMap.Entry<String,Player> aux : playerList.entrySet())
+        for(Player aux : playerList)
         {
-            String name = aux.getKey();
-            playerList.get(name).toString();
+            aux.getFull_name();
         }
     }
 

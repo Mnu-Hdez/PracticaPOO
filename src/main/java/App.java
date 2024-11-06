@@ -1,8 +1,13 @@
 import java.util.ArrayList;
+import java.util.Collection;
+
+import javax.management.RuntimeErrorException;
+
 import console.CLI;
 import controller.*;
 import model.Player;
-public class App 
+import model.User;
+public class App
 {
     private static CLI console ;
     private Player_Controller playerCont;
@@ -29,13 +34,37 @@ public class App
             console.getCommand();
             console.printScreen("\n");
             String command = console.getCommand();
-            String[] command_args = command.split(" ");
+            String[] command_args = command.split(";");
             String[] new_args;
-
+            User login = null;
+    
             //check every operation has the right number of arguments
-            switch (command_args[0].toLowerCase()) 
+            switch (command_args[0].toLowerCase())
             {
-            
+            case "login":
+                if(login != null)
+                {
+                    throw new RuntimeException("User already logged in");
+                }
+                if(command_args.length!=2)
+                {
+                    throw new RuntimeException("Login command must have 2 arguments <login> <mail;password>");
+                }
+                login = login(command_args[1],command_args[2],playerCont.getPlayerList().values());
+                if(login == null)
+                {
+                    login = login(command_args[1],command_args[2],adminCont.getPlayerList());
+                }
+                break;
+            case "logout":
+                if(login == null)
+                {
+                    throw new RuntimeException("User not logged in");
+                }
+                else
+                {
+                    login = null;
+                }
             case "create":
                 if(command_args.length != 2 )
                 {
@@ -84,7 +113,7 @@ public class App
                 break;
 
             case "show_matchmake":
-                //implement showMatchmaking
+                
                 matchmakeCont.showMatchmaking();
                 System.out.println();
                 break;
@@ -122,5 +151,17 @@ public class App
                 throw new RuntimeException("Invalid Command");
             }
         }
+    }
+    public User login(String mail,String password,Collection<Player> userList)
+    {
+        for(User user:userList)
+        {
+            if(user.getMail().equals(mail) && user.getPassword().equals(password))
+            {
+                return user;
+            }
+        }
+        System.out.println("Incorrect Credentials");
+        return null;
     }
 }

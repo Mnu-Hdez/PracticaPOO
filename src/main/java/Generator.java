@@ -2,9 +2,9 @@ import controller.*;
 import model.*;
 public class Generator 
 {
-    private Player_Controller pController;
-    private Matchmake_Controller mController;
-
+    private User_Controller pController;
+    private Tournament_Controller tController;
+    private 
     public Generator(Player_Controller pController)
     {
         this.pController = pController;

@@ -1,15 +1,14 @@
 package model;
-import java.math.*;
 import java.util.Collection;
 
 public class Team 
 {
     private String name;
     private Collection<Player> lineup;
+    private Admin admin;
 
-    public team()
+    public Team()
     {
-
     }
 
     
@@ -39,6 +38,8 @@ public class Team
     //revisar
     public double getMediaGeometrica()
     {
+        //hay que hacerlo de todas las estadísticas
+
         double mux = 1;
         for(Player aux: lineup)
         {
@@ -48,7 +49,7 @@ public class Team
             }
         }
 
-        double media = Math.cbrt(mux);
+        double media = Math.pow(mux, 1.0/lineup.size());
         return media;
     }
 

@@ -1,24 +1,27 @@
 package model;
 
-import controller.IAdmin;
-import controller.IPlayer;
-
-public class Player extends User implements IPlayer,IAdmin{
+public class Player extends User{
 
     private double score;
     private String full_name;
     private String dni;
-    //hashmap o hashset para unir inequivocamente a los jugadores
-    //con su debida puntuacion en cada categoria
-    //sino lista normal
+    private Admin admin;
 
-    
-    // revisar los atributos y los constructores super()
-    public Player(String username, String password, String mail,double score, String dni, String full_name) 
+    public Player( String mail,String password,double score, String dni, String full_name,Admin admin) 
     {
-        super(username,password,mail);
+        super(mail,password);
         this.score = score;
         this.dni = dni;
+        this.admin = admin;
+        this.full_name = full_name;
+    }
+
+    public Player(String mail, String password, String dni, String full_name, Admin admin) 
+    {
+        super(mail, password);
+        this.dni = dni;
+        this.admin = admin;
+        this.full_name = full_name;
     }
 
     public String getFull_name() {
@@ -44,7 +47,10 @@ public class Player extends User implements IPlayer,IAdmin{
     public void setScore(double score) {
         this.score = score;
     }
-
+    public User getAdmin()
+    {
+        return this.admin;
+    }
     @Override
     public String toString() {
         return full_name + ", " + score + " puntos";
