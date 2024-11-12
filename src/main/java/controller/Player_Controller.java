@@ -1,40 +1,34 @@
 package controller;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashMap;
-
-import javax.swing.plaf.metal.MetalBorders.PaletteBorder;
-
 import model.*;
 import view.Player_View; 
 
-public class Player_Controller extends User_Controller implements IPlayer
+public class Player_Controller extends User_Controller<Player> /*implements IPlayer*/
 {
-    //fix to use  the super playerList
-    private Collection<Player> PlayerList;
     private Player_View playerview;
 
     public Player_Controller(Collection<Player> PlayerList)
     {
-        this.PlayerList = PlayerList;
+        this.UserList = PlayerList;
     }
 
     public Player_Controller()
     {
-        this.PlayerList = new ArrayList<Player>();
+        this.UserList = new ArrayList<Player>();
     }
 
     public Collection<Player> getPlayerList() {
-        return PlayerList;
+        return UserList;
     }
 
     public void setPlayerList(Collection<Player> playerList) {
-        PlayerList = playerList;
+        this.UserList = playerList;
     }
     
     public void setPlayerScore(String mail,float score){
 
-        for(Player player:PlayerList)
+        for(Player player:UserList)
         {
             if(player.getMail().equals(mail))
             {
@@ -49,7 +43,7 @@ public class Player_Controller extends User_Controller implements IPlayer
     public boolean createPlayer(String mail,String password, String dni, String full_name,Admin admin)
     { 
         boolean flag = true;
-        for(Player player:PlayerList)
+        for(Player player:UserList)
         {
             if(player.getMail().equals(mail))
             {
@@ -58,7 +52,7 @@ public class Player_Controller extends User_Controller implements IPlayer
         }
         if(flag == true)
         {
-            PlayerList.add(new Player(mail,password,0,dni,full_name,admin));
+            UserList.add(new Player(mail,password,0,dni,full_name,admin));
         }
         
         return flag;
@@ -66,7 +60,7 @@ public class Player_Controller extends User_Controller implements IPlayer
 
     public Player getPlayer(String mail)
     {
-        for(Player player:PlayerList)
+        for(Player player:UserList)
         {
             if(player.getMail().equals(mail))
             {
@@ -80,10 +74,10 @@ public class Player_Controller extends User_Controller implements IPlayer
     {
         boolean flag = false;
 
-        for(Player player:PlayerList){
+        for(Player player:UserList){
             if(player.getMail().equals(mail))
             {
-                PlayerList.remove(player);
+                UserList.remove(player);
                 flag = true;
             }
         }
@@ -92,14 +86,14 @@ public class Player_Controller extends User_Controller implements IPlayer
 
     public void showList()
     {
-        this.playerview.showList(PlayerList);
+        this.playerview.showList(UserList);
     }
 
     
 
     public void rank()
     {
-        ArrayList<Player> players = new ArrayList<>(PlayerList);
+        ArrayList<Player> players = new ArrayList<>(UserList);
 
         while(!players.isEmpty())
         {

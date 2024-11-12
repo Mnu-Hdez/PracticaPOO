@@ -1,8 +1,8 @@
 package model;
 
-public interface IUser {
-    boolean login(String mail,String password,User activeUser);
-    void logout(User activeUser);
+public interface IUser<T extends User> {
+    boolean login(String mail,String password,T activeUser);
+    void logout(T activeUser);
     void tournament_list();
 
 }

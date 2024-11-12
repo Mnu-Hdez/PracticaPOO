@@ -3,14 +3,13 @@ package controller;
 import model.IUser;
 import model.User;
 import java.util.Collection;
-public class User_Controller implements IUser
-{
-    protected Collection<User> UserList;
+public class User_Controller<T extends User> implements IUser<T> {
 
+    protected Collection<T> UserList;
 
-    public boolean login(String mail,String password,User activeUser)
+    public boolean login(String mail,String password,T activeUser)
     {
-        for(User user:UserList)
+        for(T user:UserList)
         {
             if(user.getMail().equals(mail) && user.getPassword().equals(password))
             {
@@ -22,13 +21,13 @@ public class User_Controller implements IUser
     }
 
 
-    public void logout(User activeUser)
+    public void logout(T activeUser)
     {
         activeUser = null;
     }
 
     public void tournament_list()
     {
-
+        
     }
 }
