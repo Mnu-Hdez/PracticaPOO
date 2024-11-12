@@ -7,24 +7,18 @@ public class User_Controller<T extends User> implements IUser<T> {
 
     protected Collection<T> UserList;
 
-    public boolean login(String mail,String password,T activeUser)
+    public T login(String mail,String password)
     {
         for(T user:UserList)
         {
             if(user.getMail().equals(mail) && user.getPassword().equals(password))
             {
-                activeUser = user;
-                return true;
+                return user;
             }
         }
-        return false;
+        return null;
     }
 
-
-    public void logout(T activeUser)
-    {
-        activeUser = null;
-    }
 
     public void tournament_list()
     {

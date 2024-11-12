@@ -28,28 +28,24 @@ public class Player_Controller extends User_Controller<Player> /*implements IPla
     
     public void setPlayerScore(String mail,float score){
 
-        for(Player player:UserList)
-        {
-            if(player.getMail().equals(mail))
-            {
+            if(getPlayer(mail)!= null){
+
                 if(score >= -999999.0)
                 {
+                    Player player = getPlayer(mail);
                     player.setScore(score);
                 }else System.out.println("Un jugador no puede tener puntuacion menor a -999999.0");
             }
-        }
     }
     
-    public boolean createPlayer(String mail,String password, String dni, String full_name,Admin admin)
+    public boolean createPlayer(String mail,String password,String dni, String full_name,Admin admin)
     { 
         boolean flag = true;
-        for(Player player:UserList)
+        if(getPlayer(mail) != null)
         {
-            if(player.getMail().equals(mail))
-            {
-                flag = false;
-            }
+            flag = false;
         }
+        
         if(flag == true)
         {
             UserList.add(new Player(mail,password,0,dni,full_name,admin));
@@ -73,13 +69,9 @@ public class Player_Controller extends User_Controller<Player> /*implements IPla
     public boolean deletePlayer(String mail)
     {
         boolean flag = false;
-
-        for(Player player:UserList){
-            if(player.getMail().equals(mail))
-            {
-                UserList.remove(player);
+        if(getPlayer(mail) != null){
+                UserList.remove(getPlayer(mail));
                 flag = true;
-            }
         }
         return flag;
     }
@@ -109,9 +101,10 @@ public class Player_Controller extends User_Controller<Player> /*implements IPla
         }
     }
 
-    public void showStatistics()
+    public void showStatistics(Player player)
     {
         //rellenar
+
     }
     
 }
