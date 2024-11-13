@@ -1,6 +1,9 @@
 package controller;
 import model.Player;
 import model.Tournament;
+import model.Team;
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Collection;
 
 public class Tournament_Controller {
@@ -14,18 +17,23 @@ public class Tournament_Controller {
     public boolean tournamentAdd(Player player,Tournament tournament)
     {
         if(this.TournamentList.contains(tournament))
-        {//previamente tenemos q revisar 
+        {
+        //previamente tenemos q revisar 
         //q el jugador exista en la clase app con el controlador
-
+        
         }
 
         //inscribe a un jugador
         return false;
     }
 
-    public void tournamentCreate()
+    public void tournamentCreate(LocalDate begin,LocalDate end,String name,String sport)
     {
-
+       Tournament tournament = new Tournament(begin, end, name, sport, new ArrayList<Team>());
+        if(!this.TournamentList.contains(tournament))
+        {
+            this.TournamentList.add(tournament);
+        }
     }
 
     public boolean tournamentDelete()

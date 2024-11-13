@@ -105,8 +105,39 @@ public class App
                 break;
 
             case "team-delete":
+                if(command_args.length != 2 )
+                {
+                    throw new IllegalArgumentException("remove command must have 2 arguments remove <Team Name>");
+                }
+                if(login == null || !(login instanceof Admin))
+                {
+                    throw new RuntimeException("Admin Role required to remove teams");
+                }
+
+                //eliminar el equipo si no está particiapando en ningun torneo
+                if(!teamCont.teamDelete(command_args[1]))
+                {
+                    throw new RuntimeException("cannot remove "+command_args[1] + " (Not in database)");
+                }
                 break;
             case "team-add":
+                if(command_args.length != 3 )
+                {
+                    throw new IllegalArgumentException("team-add command must have 3 arguments team-add <Player email> <Team Name>");
+                }
+                if(playerCont.getPlayer(command_args[1])== null )
+                {
+                    throw new RuntimeException("cannot add "+command_args[1] + " (Not in database)");
+                }
+                if(login == null || !(login instanceof Admin))
+                {
+                    throw new RuntimeException("Admin Role required to add players");
+                }
+                if(teamCont.getTeam(command_args[2]) == null)
+                {
+                    throw new RuntimeException("cannot add to team: "+command_args[2] + " (Not existent)");
+                }
+                teamCont.teamAdd(command_args[2],playerCont.getPlayer(command_args[1]));
                 break;
             case "team-remove":
                 break;

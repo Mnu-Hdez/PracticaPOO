@@ -1,6 +1,5 @@
 import controller.*;
 import model.*;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.ArrayList;
 public class Generator 
@@ -33,22 +32,23 @@ public class Generator
         Player ali = new Player("alice@alumnos.upm.es", "password2324","12345673G","Alicia Fuente", alga);
         playerCont.addPlayer(ali);
 
-        
+
          
 
 
 
-        tournamentCont.tournamentAdd(new Tournament(LocalDate.of(2023, 10, 1), LocalDate.of(2023, 10, 5), "Champions League", "Football"));
-        tournamentCont.tournamentAdd(new Tournament(LocalDate.of(2023, 8, 1), LocalDate.of(2023, 8, 10), "Wimbledon", "Tennis"));
-        tournamentCont.tournamentAdd(new Tournament(LocalDate.of(2024, 3, 15), LocalDate.of(2024, 3, 25), "March Madness", "Basketball"));
-        tournamentCont.tournamentAdd(new Tournament(LocalDate.of(2025, 7, 20), LocalDate.of(2025, 8, 5), "Tour de France", "Cycling"));
-        tournamentCont.tournamentAdd(new Tournament(LocalDate.of(2023, 9, 10), LocalDate.of(2023, 9, 20), "US Open", "Tennis"));
+        tournamentCont.tournamentCreate(LocalDate.of(2023, 10, 1), LocalDate.of(2023, 10, 5), "Champions League", "Football");
+        tournamentCont.tournamentCreate(LocalDate.of(2023, 8, 1), LocalDate.of(2023, 8, 10), "Wimbledon", "Tennis");
+        tournamentCont.tournamentCreate(LocalDate.of(2024, 3, 15), LocalDate.of(2024, 3, 25), "March Madness", "Basketball");
+        tournamentCont.tournamentCreate(LocalDate.of(2025, 7, 20), LocalDate.of(2025, 8, 5), "Tour de France", "Cycling");
+        tournamentCont.tournamentCreate(LocalDate.of(2023, 9, 10), LocalDate.of(2023, 9, 20), "US Open", "Tennis");
 
 
         // Example data for teams
         Team team1 = new Team( "GolfosBurgo", alga,new ArrayList<Player>());
-        Team team2 = new Team("Team B", "City B", "Coach B");
-        Team team3 = new Team("Team C", "City C", "Coach C");
+        Team team2 = new Team("Nutrias nalgonas", bob, new ArrayList<Player>());
+        Team team3 = new Team("Albacete fc", juan, new ArrayList<Player>());
+
         /* 
         teamCont.addTeam(team1);
         teamCont.addTeam(team2);

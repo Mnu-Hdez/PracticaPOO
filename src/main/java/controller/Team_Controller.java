@@ -2,6 +2,8 @@ package controller;
 import model.Team;
 import model.Player;
 import model.Admin;
+
+import java.util.ArrayList;
 import java.util.Collection;
 public class Team_Controller 
 {
@@ -12,6 +14,17 @@ public class Team_Controller
         this.TeamList = TeamList;
     }
 
+    public Team getTeam(String Team_name)
+   {
+       for(Team team: TeamList)
+       {
+            if(team.getName().equals(Team_name))
+            {
+                return team;
+            }
+       }
+       return null;
+   }
     public boolean teamCreate(String Team_name,Admin admin)
     {
         for(Team team: TeamList)
@@ -22,14 +35,21 @@ public class Team_Controller
             }
         }
        // no se ha encontrado un equipo con el mismo nombre
-       this.TeamList.add(new Team(Team_name,admin));
+       this.TeamList.add(new Team(Team_name,admin,new ArrayList<Player>()));
+       //igual muy concreto (poco abstracto)
         return true;
     }
 
     public boolean teamCreate(String Team_name,Admin admin,Collection<Player> lineup)
     {
-
-
+        for(Team team: TeamList)
+        {
+            if(team.getName().equals(Team_name))
+            {
+                return false;
+            }
+        }
+        this.TeamList.add(new Team(Team_name,admin,lineup));
         return false;
     }
 
@@ -61,7 +81,7 @@ public class Team_Controller
         {
             if(team.getName().equals(Team_name))
             {
-                
+
             }
         }
         return false;

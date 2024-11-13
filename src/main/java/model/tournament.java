@@ -4,8 +4,8 @@ import java.time.LocalDate;
 import java.util.Collection;
 
 public class Tournament {
-    private LocalDate inicio;
-    private LocalDate fin;
+    private LocalDate begin;
+    private LocalDate end;
     private String league;
     private String sport;
     private Collection<Team> Participants;
@@ -14,9 +14,9 @@ public class Tournament {
     //otra opcion es crear 2 clases de torneo,
     //una individual y otro de colectivo
     
-    public Tournament(LocalDate inicio, LocalDate fin, String league, String sport,Collection<Team> Participants) {
-        this.inicio = inicio;
-        this.fin = fin;
+    public Tournament(LocalDate begin, LocalDate end, String league, String sport,Collection<Team> Participants) {
+        this.begin = begin;
+        this.end = end;
         this.league = league;
         this.sport = sport;
         this.Participants = Participants;
@@ -28,20 +28,20 @@ public class Tournament {
         this.sport = sport;
     }
 
-    public LocalDate getInicio() {
-        return inicio;
+    public LocalDate getBegin() {
+        return begin;
     }
 
-    public void setInicio(LocalDate inicio) {
-        this.inicio = inicio;
+    public void setBegin(LocalDate inicio) {
+        this.begin = inicio;
     }
 
-    public LocalDate getFin() {
-        return fin;
+    public LocalDate getEnd() {
+        return end;
     }
 
-    public void setFin(LocalDate fin) {
-        this.fin = fin;
+    public void setEnd(LocalDate fin) {
+        this.end = fin;
     }
 
     public String getLeague() {
