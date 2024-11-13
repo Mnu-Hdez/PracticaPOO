@@ -51,6 +51,7 @@ public class Player extends User{
     {
         return this.admin;
     }
+
     @Override
     public String toString() {
         return full_name + ", " + score + " puntos";

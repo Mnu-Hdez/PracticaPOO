@@ -4,7 +4,6 @@ import java.util.Collection;
 
 public class Admin_Controller extends User_Controller<Admin>
 {
-    public Admin_Controller(){}
     
     public Admin_Controller(Collection<Admin> AdminList)
     {

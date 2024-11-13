@@ -54,6 +54,16 @@ public class Player_Controller extends User_Controller<Player> /*implements IPla
         return flag;
     }
 
+    public boolean addPlayer(Player player)
+    {
+        if(!this.UserList.contains(player))
+        {
+            UserList.add(player);
+            return true;
+        }
+        return false;
+    }
+
     public Player getPlayer(String mail)
     {
         for(Player player:UserList)

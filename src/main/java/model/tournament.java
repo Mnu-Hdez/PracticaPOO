@@ -1,40 +1,46 @@
 package model;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.util.Collection;
 
 public class Tournament {
-    private Date inicio;
-    private Date fin;
+    private LocalDate inicio;
+    private LocalDate fin;
     private String league;
     private String sport;
-
+    private Collection<Team> Participants;
+    //si solo participa una persona sin equipo se creará un
+    //nuevo equipo de una sola persona
+    //otra opcion es crear 2 clases de torneo,
+    //una individual y otro de colectivo
     
-    public Tournament(Date inicio, Date fin, String league, String sport) {
+    public Tournament(LocalDate inicio, LocalDate fin, String league, String sport,Collection<Team> Participants) {
         this.inicio = inicio;
         this.fin = fin;
         this.league = league;
         this.sport = sport;
+        this.Participants = Participants;
     }
 
     public Tournament(String league, String sport)
     {
         this.league = league;
-        this.sport = sport; 
+        this.sport = sport;
     }
 
-    public Date getInicio() {
+    public LocalDate getInicio() {
         return inicio;
     }
 
-    public void setInicio(Date inicio) {
+    public void setInicio(LocalDate inicio) {
         this.inicio = inicio;
     }
 
-    public Date getFin() {
+    public LocalDate getFin() {
         return fin;
     }
 
-    public void setFin(Date fin) {
+    public void setFin(LocalDate fin) {
         this.fin = fin;
     }
 
@@ -54,4 +60,9 @@ public class Tournament {
         this.sport = sport;
     }
 
+    public Collection<Team> getParticipants() {
+        return Participants;
+    }
+
+    
 }

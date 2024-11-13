@@ -7,11 +7,13 @@ public class Team
     private Collection<Player> lineup;
     private Admin admin;
 
-    public Team()
+    public Team(String name,Admin admin,Collection<Player> lineup)
     {
+        this.name = name;
+        this.admin = admin;
+        this.lineup = lineup;
     }
 
-    
     public String getName() {
         return name;
     }
@@ -34,12 +36,16 @@ public class Team
         this.lineup = lineup;
     }
 
+    public Admin getAdmin() {
+        return admin;
+    }
+
 
     //revisar
     public double getMediaGeometrica()
     {
         //hay que hacerlo de todas las estadísticas
-
+        // TO FIX
         double mux = 1;
         for(Player aux: lineup)
         {
@@ -52,7 +58,5 @@ public class Team
         double media = Math.pow(mux, 1.0/lineup.size());
         return media;
     }
-
-
 
 }

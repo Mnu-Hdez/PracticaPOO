@@ -1,17 +1,11 @@
 import java.util.ArrayList;
 
-
 import console.CLI;
 import controller.*;
-import model.Admin;
-import model.Player;
-import model.User;
+import model.*;
 public class App
 {
     private static CLI console ;
-    private Player_Controller playerCont;
-    private Matchmake_Controller matchmakeCont;
-    private Admin_Controller adminCont;
     private Generator generator;
 
     public static void main( String[] args )
@@ -22,10 +16,14 @@ public class App
 
     public void StartApp()
     {
-        console = new CLI();
-        playerCont = new Player_Controller();
-        adminCont = new Admin_Controller();
-        generator = new Generator(playerCont,matchmakeCont);
+        CLI console = new CLI();
+        Player_Controller playerCont = new Player_Controller(new ArrayList<Player>());
+        Admin_Controller adminCont = new Admin_Controller(new ArrayList<Admin>());
+        Tournament_Controller tournamentCont = new Tournament_Controller(new ArrayList<Tournament>());
+        Team_Controller teamCont = new Team_Controller(new ArrayList<Team>());   
+        Matchmake_Controller matchmakeCont = new Matchmake_Controller(new ArrayList<Matchmake>());
+        this.generator = new Generator(playerCont,adminCont,tournamentCont,teamCont);//matchmakeCont ???
+
         User login = null;
 
         generator.populate();
