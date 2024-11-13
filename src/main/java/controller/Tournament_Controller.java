@@ -33,14 +33,26 @@ public class Tournament_Controller {
         }
     }
 
-    public boolean tournamentDelete(String league_name)
+    public boolean tournamentDelete(String tournament_name)
     {
-        
+        for(Tournament tournament: this.TournamentList)
+        {
+            if(tournament.getName().equals(tournament_name))
+            {
+                this.TournamentList.remove(tournament);
+                return true;
+            }
+        }
         return false;
     }
 
+    public boolean tournamentRemove(String tournament_name,Player player)
+    {
+        return false;
+    }
     public boolean tournamentMatchmaking()
     {
+
         //fix
         return false;
     }

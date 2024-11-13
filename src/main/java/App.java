@@ -231,20 +231,4 @@ public class App
         }
     }
 
-    //es valido esto???
-    /* 
-    public User login(String mail,String password,Collection<Player> userList)
-    {
-        for(User user:userList)
-        {
-            if(user.getMail().equals(mail) && user.getPassword().equals(password))
-            {
-                return user;
-            }
-        }
-        System.out.println("Incorrect Credentials");
-        return null;
-    }
-        */
-
 }
