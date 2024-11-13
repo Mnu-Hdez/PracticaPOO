@@ -46,14 +46,42 @@ public class Tournament_Controller {
         return false;
     }
 
-    public boolean tournamentRemove(String tournament_name,Player player)
+    public boolean tournamentRemove(String tournament_name,Player player,boolean deleteTeam)
     {
+
+        for(Tournament tournament: this.TournamentList)
+        {
+            if(tournament.getName().equals(tournament_name))
+            {
+                Collection<Team> Team = tournament.getParticipants();
+
+                for(Team team: Team)
+                {
+                    if(team.getLineup().contains(player))
+                    {
+                        if(deleteTeam)
+                        {
+                            Team.remove(team);
+                            tournament.setParticipants(Team);
+                            tournamentMatchmaking();//afecta al matchmaking
+                            return true;
+                        }
+                        else
+                        {
+                            team.getLineup().remove(player);
+                            tournament.setParticipants(Team);
+                            tournamentMatchmaking();//afecta al matchmaking
+                            return true;
+                        }
+                    }
+                } 
+            }
+        }
         return false;
     }
     public boolean tournamentMatchmaking()
     {
-
-        //fix
+        //FILL IN
         return false;
     }
 

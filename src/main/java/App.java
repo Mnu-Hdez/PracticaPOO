@@ -141,6 +141,19 @@ public class App
                 teamCont.teamAdd(command_args[2],playerCont.getPlayer(command_args[1]));
                 break;
             case "team-remove":
+            if(command_args.length != 3 )
+            {
+                throw new IllegalArgumentException("team-remove command must have 3 arguments team-remove <Player email> <Team Name>");
+            }
+            if(playerCont.getPlayer(command_args[1])== null || teamCont.getTeam(command_args[2]) == null)
+            {
+                throw new RuntimeException("cannot remove (Team/Player Not in database)");
+            }
+            if(login == null || !(login instanceof Admin))
+            {
+                throw new RuntimeException("Admin Role required to remove players");
+            }
+            teamCont.teamRemove(command_args[2],playerCont.getPlayer(command_args[1]));            
                 break;
 
             case "tournament-create":

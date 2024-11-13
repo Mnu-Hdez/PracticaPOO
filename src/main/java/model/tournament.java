@@ -4,8 +4,14 @@ import java.time.LocalDate;
 import java.util.Collection;
 
 public class Tournament {
+    
     private LocalDate begin;
     private LocalDate end;
+
+    public void setParticipants(Collection<Team> participants) {
+        Participants = participants;
+    }
+
     private String name;
     private String league;
     private String sport;

@@ -34,9 +34,7 @@ public class Team_Controller
                 return false;
             }
         }
-       // no se ha encontrado un equipo con el mismo nombre
-       this.TeamList.add(new Team(Team_name,admin,new ArrayList<Player>()));
-       //igual muy concreto (poco abstracto)
+        this.TeamList.add(new Team(Team_name,admin,new ArrayList<Player>()));
         return true;
     }
 
@@ -55,10 +53,14 @@ public class Team_Controller
 
     public boolean teamDelete(String Team_name)
     {
-        //ESTO DEPENDE DE SI EL CONTROLADOR DE TOURNAMENT
-        // NOS DICE SI EL TORNEO COMENZO O NO
-        
-        //fix
+        for(Team team: TeamList)
+        {
+            if(team.getName().equals(Team_name))
+            {
+                TeamList.remove(team);
+                return true;
+            }
+        }
         return false;
     }
 
