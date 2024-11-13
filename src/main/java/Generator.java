@@ -37,11 +37,11 @@ public class Generator
 
 
 
-        tournamentCont.tournamentCreate(LocalDate.of(2023, 10, 1), LocalDate.of(2023, 10, 5), "Champions League", "Football");
-        tournamentCont.tournamentCreate(LocalDate.of(2023, 8, 1), LocalDate.of(2023, 8, 10), "Wimbledon", "Tennis");
-        tournamentCont.tournamentCreate(LocalDate.of(2024, 3, 15), LocalDate.of(2024, 3, 25), "March Madness", "Basketball");
-        tournamentCont.tournamentCreate(LocalDate.of(2025, 7, 20), LocalDate.of(2025, 8, 5), "Tour de France", "Cycling");
-        tournamentCont.tournamentCreate(LocalDate.of(2023, 9, 10), LocalDate.of(2023, 9, 20), "US Open", "Tennis");
+        tournamentCont.tournamentCreate(LocalDate.of(2023, 10, 1), LocalDate.of(2023, 10, 5), "Champions League","Pro-League", "Football");
+        tournamentCont.tournamentCreate(LocalDate.of(2023, 8, 1), LocalDate.of(2023, 8, 10), "Wimbledon","French League","Tennis");
+        tournamentCont.tournamentCreate(LocalDate.of(2024, 3, 15), LocalDate.of(2024, 3, 25), "March Madness","NBA", "Basketball");
+        tournamentCont.tournamentCreate(LocalDate.of(2025, 7, 20), LocalDate.of(2025, 8, 5), "Tour de France","Elite League", "Cycling");
+        tournamentCont.tournamentCreate(LocalDate.of(2023, 9, 10), LocalDate.of(2023, 9, 20), "US Open","Outer League","Tennis");
 
 
         // Example data for teams

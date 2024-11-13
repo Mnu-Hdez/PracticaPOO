@@ -6,6 +6,7 @@ import java.util.Collection;
 public class Tournament {
     private LocalDate begin;
     private LocalDate end;
+    private String name;
     private String league;
     private String sport;
     private Collection<Team> Participants;
@@ -14,19 +15,25 @@ public class Tournament {
     //otra opcion es crear 2 clases de torneo,
     //una individual y otro de colectivo
     
-    public Tournament(LocalDate begin, LocalDate end, String league, String sport,Collection<Team> Participants) {
+    public Tournament(LocalDate begin, LocalDate end,String name,String league, String sport,Collection<Team> Participants) {
         this.begin = begin;
         this.end = end;
         this.league = league;
+        this.name = name;
         this.sport = sport;
         this.Participants = Participants;
     }
 
-    public Tournament(String league, String sport)
-    {
-        this.league = league;
-        this.sport = sport;
+
+    public String getName() {
+        return name;
     }
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
 
     public LocalDate getBegin() {
         return begin;

@@ -18,27 +18,24 @@ public class Tournament_Controller {
     {
         if(this.TournamentList.contains(tournament))
         {
-        //previamente tenemos q revisar 
-        //q el jugador exista en la clase app con el controlador
-        
+            this.TournamentList.add(tournament);
+            return true;
         }
-
-        //inscribe a un jugador
         return false;
     }
 
-    public void tournamentCreate(LocalDate begin,LocalDate end,String name,String sport)
+    public void tournamentCreate(LocalDate begin,LocalDate end,String name,String league,String sport)
     {
-       Tournament tournament = new Tournament(begin, end, name, sport, new ArrayList<Team>());
+       Tournament tournament = new Tournament(begin, end, name,league, sport, new ArrayList<Team>());
         if(!this.TournamentList.contains(tournament))
         {
             this.TournamentList.add(tournament);
         }
     }
 
-    public boolean tournamentDelete()
+    public boolean tournamentDelete(String league_name)
     {
-        //fix
+        
         return false;
     }
 
