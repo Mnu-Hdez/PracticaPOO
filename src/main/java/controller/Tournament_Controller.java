@@ -5,6 +5,7 @@ import model.Team;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 
 public class Tournament_Controller {
 
@@ -63,14 +64,14 @@ public class Tournament_Controller {
                         {
                             Team.remove(team);
                             tournament.setParticipants(Team);
-                            tournamentMatchmaking();//afecta al matchmaking
+                            tournamentMatchmaking(tournament_name,"-m");//afecta al matchmaking
                             return true;
                         }
                         else
                         {
                             team.getLineup().remove(player);
                             tournament.setParticipants(Team);
-                            tournamentMatchmaking();//afecta al matchmaking
+                            tournamentMatchmaking(tournament_name,"-m");//afecta al matchmaking
                             return true;
                         }
                     }
@@ -79,10 +80,54 @@ public class Tournament_Controller {
         }
         return false;
     }
-    public boolean tournamentMatchmaking()
+    public boolean tournamentMatchmaking(String tournament_name,String mode)
     {
-        //FILL IN
-        return false;
+            for (Tournament tournament : this.TournamentList) {
+
+                if (tournament.getName().equals(tournament_name) && isInProgress(tournament)) {
+                    Collection<Team> teams = tournament.getParticipants();
+                    switch (mode) {
+                        case "-m":
+                            manualMatchmaking(teams);//hacerlos boolean para que devuelvan cosas
+                            break;
+
+                        case "-a":
+                            automaticMatchmaking(teams);
+                            break;
+                    
+                        default:
+                            System.out.println("\n Modo de matchmaking no válido. \n");
+                            return false;
+                    }
+                }
+            }
+            return false;
     }
 
+    private boolean manualMatchmaking(Collection<Team> teams) 
+    {
+            // Implement manual matchmaking logic here
+            return false;//modify
+    }
+
+    private boolean automaticMatchmaking(Collection<Team> teams) 
+    {
+        ArrayList<Team> teamList = new ArrayList<>(teams);
+        Collections.shuffle(teamList);
+        // Implement automatic matchmaking logic here
+
+        
+        return false;//modify
+    }
+
+    public void tournament_list()
+    {
+        //LIST WITH PROPERTIES??
+    }
+
+    public boolean isInProgress(Tournament tournament)
+    {
+        //FINISH TO CODE
+        return false;
+    }
 }

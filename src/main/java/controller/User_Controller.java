@@ -20,8 +20,5 @@ public class User_Controller<T extends User> implements IUser<T> {
     }
 
 
-    public void tournament_list()
-    {
-        
-    }
+   
 }
