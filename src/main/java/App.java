@@ -3,33 +3,32 @@ import java.util.ArrayList;
 import console.CLI;
 import controller.*;
 import model.*;
+
 public class App
 {
-    private static CLI console ;
+    private CLI console;
+    private Player_Controller playerCont;
+    private Admin_Controller adminCont;
+    private Tournament_Controller tournamentCont;
+    private Team_Controller teamCont;
+    private Matchmake_Controller matchmakeCont;
     private Generator generator;
-
-    public static void main( String[] args )
+    private User login;
+    public static void main( String[] args)
     {
      App app = new App();
+     app.init();
      app.StartApp();
     }
 
     public void StartApp()
     {
-        CLI console = new CLI();
-        Player_Controller playerCont = new Player_Controller(new ArrayList<Player>());
-        Admin_Controller adminCont = new Admin_Controller(new ArrayList<Admin>());
-        Tournament_Controller tournamentCont = new Tournament_Controller(new ArrayList<Tournament>());
-        Team_Controller teamCont = new Team_Controller(new ArrayList<Team>());   
-        Matchmake_Controller matchmakeCont = new Matchmake_Controller(new ArrayList<Matchmake>());
-        this.generator = new Generator(playerCont,adminCont,tournamentCont,teamCont);//matchmakeCont ???
-
-        User login = null;
-
+        
         generator.populate();
 
         for(;;)
         {
+            //IMPLEMENTAR CON INTERFACES
             console.initialize();
             console.getCommand();
             console.printScreen("\n");
@@ -157,6 +156,7 @@ public class App
                 break;
 
             case "tournament-create":
+
             break;
 
             case "tournament-delete":
@@ -242,6 +242,18 @@ public class App
                 throw new RuntimeException("Invalid Command");
             }
         }
+    }
+
+    public void init()
+    {
+        console = new CLI();
+        playerCont = new Player_Controller(new ArrayList<Player>());
+        adminCont = new Admin_Controller(new ArrayList<Admin>());
+        tournamentCont = new Tournament_Controller(new ArrayList<Tournament>());
+        teamCont = new Team_Controller(new ArrayList<Team>());   
+        matchmakeCont = new Matchmake_Controller(new ArrayList<Matchmake>());
+        generator = new Generator(playerCont,adminCont,tournamentCont,teamCont);//matchmakeCont ???
+        login = null;
     }
 
 }
