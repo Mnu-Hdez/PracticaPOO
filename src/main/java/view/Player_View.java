@@ -19,5 +19,4 @@ public class Player_View {
     {
         player.toString();
     }
-
 }
